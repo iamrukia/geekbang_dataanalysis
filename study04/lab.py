@@ -28,7 +28,7 @@ chineses = peoples[:]['chinese']
 maths = peoples[:]['math']
 englishs = peoples[:]['english']
 print(ages)
-print(chineses)
+print('chinese', chineses)
 print(maths)
 print(englishs)
 print(np.mean(ages))
@@ -94,4 +94,16 @@ print('average over a with weights awts', np.average(a, weights=awts))
 print(' standard deviation of array = ', np.std(a))
 print(' variance of array = ', np.var(a))
 
+b = np.array(
+    [
+        [1, 5, 3],
+        [6, 2, 4]
+    ]
+)
 
+print('quicksort', np.sort(b, kind='quicksort'))
+print('heapsort', np.sort(b, kind='heapsort'))
+print('sort Non axis', np.sort(b))
+print('sort over axis=0', np.sort(b, axis=0))
+print('sort over axis=1', np.sort(b, axis=1))
+print('sort over axis=-1', np.sort(b, axis=-1))
